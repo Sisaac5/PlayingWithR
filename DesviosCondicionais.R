@@ -25,3 +25,20 @@ radiuos = as.numeric(readline())
 3
 volume <- (4/3) * 3.14 * radiuos * radiuos * radiuos
 cat("VOLUME = ", volume)
+
+#teste <- scan()
+for(item in teste){
+  print(item)
+}
+
+cat("Old test = ", teste[1], teste[2], teste[3], teste[4], teste[5], sep = " ")
+for(i in 1:length(teste)){
+  teste[i] <- teste[i] + 1
+}
+cat("Old test = ", teste[1], teste[2], teste[3], teste[4], teste[5], sep = " ")
+
+install.packages("readr")
+?read.csv()
+library(readr)
+data1 <- read.csv('C:\Users\sisaa\Desktop\NewR\DesviosCondicionais.R')
+head(data1, 5)
