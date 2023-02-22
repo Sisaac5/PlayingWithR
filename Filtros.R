@@ -46,3 +46,9 @@ americaData <- df[df['continent'] == "North America"]
 str(df$continent)
 summary(df$continent)
 df$continent[2]
+
+#criando dataframe
+
+nomes = c("Clodoaldo Pereira", "Maria Betânia")
+idades = c(20,21)
+df <- data.frame(nomes, idades)
