@@ -42,6 +42,12 @@ Funcionario <- setClass("Funcionario",slots = list(name = "character", salario =
 f1 = Funcionario(name="Amanda", salario=7500)
 print(f1)
 
+info <-function(){
+  print("OI")
+}
+
+info()
+
 #definindo métodos
 setMethod("info", "Funcionario", function(obj){
   cat("Name: ", obj$name, "\nSalary: ", obj$salario, "\n")
