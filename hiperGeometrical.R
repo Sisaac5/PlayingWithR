@@ -17,10 +17,15 @@ combinacao <- function(n, x){
 
 
 hiperGeometrical <- function(N, r, n, k){
-  print(combinacao(r,k))
-  print(combinacao(N-r,n-k))
-  print(combinacao(N,n))
   return((combinacao(r,k) * combinacao(N-r, n-k)) / combinacao(N, n))
+}
+
+matematicalHopeHG <- function(N,r,n,k){
+  return(n * (r/N))  
+}
+
+varianceHG <- function(N,r,n,k){
+  return(n*(r/N)*(1-(r/N))*((N-n)/(N-1)))
 }
 
 hiperGeometrical(100, 10, 5, 0)
